@@ -21,7 +21,6 @@ class Game {
         this.word = this.words[Math.floor(Math.random() * this.words.length)]
         this.startIndex = 1;
         this.endIndex = 5;
-        console.log(this.word)
         this.openInputs(this.startIndex, this.endIndex);
         window.addEventListener("keydown", (event) => {
             if (event.key === "Enter") {
