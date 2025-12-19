@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+
+:root {
+    --bgcolor: white;
+    --text: #EBDA28;
+    --contains: #dec36d;
+    --accepted: #6ba94f;
+    --based: #666667;
+}
+
+
+body {
+    background-color: var(--bgcolor);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: -40px;
+}
+
+#name {
+    color: var(--text);
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 7px -5px 0px #ebc728;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+
+#board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 700px;
+    height: auto;
+    align-content: flex-start;
+    padding: 10px;
+    margin-top: -80px;
+}
+
+input {
+    display: flex;
+    background-color: var(--based);
+    height: 120px;
+    width: 120px;
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+    font-family: "Vend Sans", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5px;
+    border: 0;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+
+.contains {
+    background-color: var(--contains) !important;
+}
+
+.accepted {
+    background-color: var(--accepted) !important;
+}
+
+
+@media screen and (max-width:700px) {
+    main {
+        scale: 0.7 !important;
+    }
+}
+
+@media screen and (max-width:400px) {
+    main {
+        scale: 0.5 !important;
+    }
+}
